@@ -1,0 +1,35 @@
+.footer
+  &__line
+    width: 100%
+    height: 2px
+    background: #5a5a5a
+    margin-bottom: 35px
+    @media (max-width: $media-small-pc)
+      margin-bottom: 10px
+  &__row
+    position: relative
+    display: flex
+    justify-content: center
+    margin-bottom: 35px
+    @media (max-width: $media-small-pc)
+      flex-direction: column
+      margin-bottom: 10px
+  &__text
+    font-size: 0.75rem
+    text-align: center
+    margin: 0
+    @media (max-width: $media-small-pc)
+      margin-bottom: 15px
+  &__number
+    position: absolute
+    right: 37px
+    top: 5px
+    font-size: 1.5rem
+    margin: 0
+    @media (max-width: $media-small-pc)
+      position: static
+      text-align: center
+  &__author
+    font-size: 0.75rem
+    text-align: center
+    margin: 0

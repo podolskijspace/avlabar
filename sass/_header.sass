@@ -1,0 +1,143 @@
+.header
+  .topbar
+    &__nav
+      margin-right: 58px
+    &__phone
+      padding-left: 30px
+      font-size: 0.91666rem
+      font-weight: 700
+      background: url("../images/call.svg") no-repeat left center
+      background-size: 9%
+
+.nav
+  @media(max-width: $media-small-pc)
+    display: none
+  &__list
+    position: relative
+    display: flex
+    margin: 0 0 10px
+  &__item
+    font-size: 0.8333rem
+    margin-right: 55px
+    &_menu
+      position: relative
+      &:hover
+        cursor: pointer
+        i
+          opacity: 0.6
+      i
+        transform: translate(6px, -2px)
+        font-size: 15px
+  &__link
+    font-size: 0.8333rem
+  .carte
+    position: absolute
+    left: -8px
+    z-index: 100
+    padding: 17px 66px 16px 12px
+    margin-top: 20px
+    background: $textColor
+    border-radius: 5px
+    display: none
+    @media(max-width: $media-small-pc)
+      position: static
+      padding: 0
+      margin: 0
+      background: 0
+    &__item
+      width: max-content
+      font-size: 0.5rem
+      line-height: 100%
+      margin-bottom: 14px
+      @media(max-width: $media-small-pc)
+        width: max-content
+        margin: 8px auto
+      &:nth-last-child(1)
+        margin-bottom: 0
+        @media(max-width: $media-small-pc)
+          width: max-content
+          margin: 8px auto
+    &__link
+      font-size: 0.5rem
+      font-family: 'Exo 2', sans-serif
+      font-weight: 700
+      color: $menuColor
+      @media(max-width: $media-small-pc)
+        font-size: 1.5rem
+        color: white
+        font-weight: 400
+      &::after
+        content: ''
+        display: block
+        height: 1px
+        background: $menuColor
+        @media(max-width: $media-small-pc)
+          display: none
+
+
+.mobile
+  position: absolute
+  &__menuBtn
+    position: fixed
+    left: 15px
+    top: 15px
+    z-index: 99999
+    display: none
+    width: 40px
+    height: 40px
+    background: rgba(black, 0.45)
+    border-radius: 3px
+    transition: 0.5s
+    @media (max-width: $media-small-pc)
+      display: block
+    &.active
+      background: white
+      .mobile__line
+        background: $btnColor
+        transform: rotate(-45deg)
+        top: 18px
+        &:nth-child(2)
+          transform: rotate(45deg)
+        &:nth-child(3)
+          transform: rotate(180deg)
+          opacity: 0
+  &__line
+    position: absolute
+    left: 6px
+    top: 8px
+    display: block
+    width: 70%
+    height: 3px
+    background: white
+    transition: 0.8s
+    &:nth-child(2)
+      top: 18px
+    &:nth-child(3)
+      top: 28px
+  &__menu
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 50
+    display: none
+    width: 100%
+    height: 100%
+    background: $primary
+  &__list
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+    margin: 0
+  &__item
+    width: max-content
+    margin: 8px auto
+    &_menu
+      &>a
+        display: block
+        margin: 0px auto
+        width: max-content
+  &__link
+    font-size: 1.3rem
+    text-align: center

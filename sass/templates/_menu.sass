@@ -1,0 +1,44 @@
+.menu
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: 73px 0 0
+    @media (max-width: $media-pc)
+      justify-content: space-around
+    @media (max-width: $media-phone)
+      margin-top: 0
+  &__item
+    margin: 0 0 98px
+    @media (max-width: $media-phone)
+      margin-bottom: 10px
+  &__img
+    max-width: 360px
+    max-height: 286px
+    width: 100%
+    height: 100%
+    @media (max-width: $media-phone)
+      max-width: 290px
+      max-height: 220px
+  &__text
+    margin: 21px 0 25px
+    font-size: 0.958334rem
+    font-weight: bold
+    text-align: center
+    color: $btnColor
+    @media (max-width: $media-phone)
+      margin: 15px 0
+  &__button
+    padding: 10px 15px
+    margin: 0 auto
+    font-weight: bold
+    color: $primary
+    background: white
+    &:before
+      background: $btnColor
+    &:focus, &:hover, &:active
+      color: white
+  &__discount
+    margin: 0 0
+    font-size: 1.5rem
+    text-align: center

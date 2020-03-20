@@ -1,0 +1,126 @@
+*, *::after, *::before
+  box-sizing: border-box
+
+
+// colors names
+$primary: #2d2d2d
+$textColor: #ffffff
+$btnColor: #ff7b00
+$valueColor: #ffcc00
+$lineColor: #c4c4c4
+$menuColor: #000000
+
+.exo
+  font-family: 'Exo 2', sans-serif
+  font-weight: 400
+
+.erasel
+  font-family: 'DS Eraser Cyr', arial, sans-serif
+  font-weight: 400
+
+
+html
+  font-size: 24px
+  font-family: 'Exo 2', sans-serif
+  color: $textColor
+  @media ( max-width: $media-phone)
+    font-size: 14px
+    
+
+body
+  background: $primary
+
+a
+  color: $textColor
+  transition: 0.3s
+  &:hover
+    opacity: 0.8
+
+button
+  display: flex
+  justify-content: center
+  align-items: center
+  min-width: max-content
+
+img 
+  width: 100%
+
+br.hide
+  @media (max-width: $media-small-phone)
+    display: none
+
+
+.title
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0
+  font-size: 1.875rem
+  font-weight: 700
+  line-height: 100%
+  text-transform: uppercase
+  &::after, &::before
+    content: ''
+    width: 40%
+    height: 2px
+    background: #4d4d4d
+    @media (max-width: $media-phone)
+      height: 0
+  &_add
+    font-size: 1.75rem
+    text-align: left
+    &::after, &::before
+      content: none
+
+.subtitle
+  text-align: center
+  font-weight: 500
+  margin: 0
+
+.button
+  padding: 10px 33px
+  font-size: 0.75rem
+  line-height: 100%
+  color: $textColor
+  background: $btnColor
+  border: 0
+  border-radius: 5px
+
+.navigation
+  display: flex
+  padding: 38px 0
+  @media (max-width: $media-phone)
+    padding: 10px 0
+  &__space
+    margin: 0 10px
+    font-size: 0.58333rem
+    @media (max-width: $media-phone)
+      margin: 0 3px
+  &__link
+    font-size: 0.58333rem
+    font-weight: 700
+    text-transform: uppercase
+    transition: 0.3s
+    &:hover
+      color: $btnColor
+      opacity: 1
+      transiton: all 0.5s ease
+    &:nth-last-child(1)
+      color: white
+      cursor: default
+
+.animate-img
+  overflow: hidden
+  img
+    transition: 0.3s
+  &:hover
+    img
+      transform: scale(1.1)
+      transiton: all 0.5s ease
+      @media (max-width: $media-phone)
+        transform: none
+
+
+
+

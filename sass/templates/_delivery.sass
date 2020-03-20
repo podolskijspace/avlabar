@@ -1,0 +1,37 @@
+.delivery
+  &__title
+    width: max-content
+    margin: 0 0 43px
+    font-size: 1.7916667rem
+    text-align: center
+    @media (max-width: $media-notebook)
+      width: auto
+      line-height: 115%
+    @media (max-width: $media-phone)
+      margin-bottom: 10px
+  &__text
+    margin: 0 0 25px
+    font-size: 1.5rem
+    @media (max-width: $media-notebook)
+      text-align: center
+      line-height: 115%
+    @media (max-width: $media-phone)
+      margin-bottom: 10px
+    @media (max-width: $media-small-phone)
+      font-size: 1.3rem
+  &__contacts
+    margin: 0
+    @media (max-width: $media-notebook)
+      text-align: center
+      line-height: 115%
+    @media (max-width: $media-small-phone)
+      font-size: 0.9rem
+  &__img
+    position: absolute
+    top: -25px
+    left: 50%
+    z-index: 50
+    width: 44%
+    transform: translateX(80px)
+    @media (max-width: $media-notebook)
+      display: none

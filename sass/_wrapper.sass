@@ -1,0 +1,82 @@
+.wrapper
+	display: flex
+	justify-content: center
+	width: 100%
+	max-width: 1366px
+	margin: 0px auto
+	&-header
+		z-index: 2
+	&-topbar
+		z-index: 
+		width: 100%
+		padding: 12px 0
+		background-color: $primary
+	&-hero
+		position: relative
+		z-index: 1
+		height: 792px
+		background: url("../images/hero-layover.png") no-repeat center -20px, url("../images/hero-bg.jpg") no-repeat center
+		@media(max-width: $media-phone)
+			height: 450px
+			background: url("../images/hero-layover.png") no-repeat center -195px, url("../images/hero-bg.jpg") no-repeat center
+			@media(max-width: $media-small-phone)
+				background: url("../images/hero-bg.jpg") no-repeat center
+				height: 280px
+	&-delivery
+		position: relative
+		z-index: 50
+		margin-top: 21px
+		padding: 53px 0
+		background: url("../images/delivery-bg.png") no-repeat center
+		@media(max-width: $media-phone)
+			padding: 15px 0
+			margin: 0
+	&-order
+		z-index: 10
+		padding: 51px 0 32px
+		background: $primary
+		@media (max-width: $media-phone)
+			padding: 15px 0
+	&-free
+		padding: 50px 0 63px
+		background: url("../images/delivery-bg.png") no-repeat center
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-recommend
+		padding: 40px 0 46px
+		background: $primary
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-discount
+		padding: 108px 0 79px
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&-cart
+		padding: 108px 0 79px
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&-about
+		padding: 108px 0 79px
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-photo
+		padding: 40px 0 80px
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-photo
+		padding: 40px 0 59px
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-contacts
+		padding: 107px 0 59px
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-menu
+		padding: 107px 0 29px
+		@media (max-width: $media-phone)
+			padding: 20px 0
+	&-footer
+		padding: 10px 0 36px
+		background: $primary
+		@media (max-width: $media-phone)
+			padding: 0 0 20px
